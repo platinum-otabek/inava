@@ -1,0 +1,15 @@
+1. inava.uz/api/account/login/
+username, password jo'natilsa, login bo'ladi va token, user qaytadi.
+
+2. inava.uz/api/account/register/
+is_staff=True bo'lgan foydalanuvchi qo'sha oladi.
+username, password, password2, name jo'natilsa, restoran registratsiya bo'ladi.
+user_id ga qo'shayotgan foydalanuvchining idsi yoziladi.
+
+3. inava.uz/api/account/change-password/
+old_password, new_password, confirm_password jo'natilganda new_password confirm_passwordga teng bo'lsa,
+old_password new_passwordga o'zgaradi.
+
+4. inava.uz/api/account/profile/
+get: profile bo'yicha ma'lumot qaytadi
+put: ma'lumot jo'natilsa, tahrirlanadi
