@@ -80,7 +80,14 @@ WSGI_APPLICATION = 'niatbk2.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 DATABASES = {
-    'default': env.db()
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'inava',
+        'USER': 'developer',
+        'PASSWORD': 'testpassword',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
+    }
 }
 
 # Password validation
